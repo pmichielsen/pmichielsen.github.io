@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content=" Archive of Posts" />
+    <meta name="description" content="" />
     <meta name="author" content="Peet Michielsen" />
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
 
-    <title>Archives - PeetRonics' blog</title>
+    <title>What I Have Learned Today - #004 - PeetRonics' blog</title>
 
    
         <link rel="stylesheet"
@@ -66,7 +66,7 @@
                 <a href="http://peetronics.com/pages/disclaimer.html">Disclaimer</a>
               </li>
             <li class="divider"></li>
-            <li class="active">
+            <li class="">
               <a href="http://peetronics.com/archives.html">Archives</a>
             </li>
           <li class="divider"></li>
@@ -88,27 +88,50 @@
     <div class="container" id="main-container">
       <div class="row">
         <div class="col-md-9" id="content">
-<ol class="breadcrumb">
-  <li><a href="http://peetronics.com/" title="Home">
-	  <i class="fas fa-home fa-fw fa-lg"></i> </a></li>
-  <li class="active">Archives</li>
-</ol>
-<h1>Archives</h1>
-<div id="archives-body">
-  <h2>2019</h2>
-  <dl>
-	<dt>Fri 08 November 2019</dt>
-	<dd><a href='http://peetronics.com/WhatIHaveLearnedToday-004.html'>What I Have Learned Today - #004</a></dd>
-	<dt>Thu 07 November 2019</dt>
-	<dd><a href='http://peetronics.com/WhatIHaveLearnedToday-003.html'>What I Have Learned Today - #003</a></dd>
-	<dt>Wed 06 November 2019</dt>
-	<dd><a href='http://peetronics.com/WhatIHaveLearnedToday-002.html'>What I Have Learned Today - #002</a></dd>
-	<dt>Tue 05 November 2019</dt>
-	<dd><a href='http://peetronics.com/WhatIHaveLearnedToday-001.html'>What I Have Learned Today - #001</a></dd>
-	<dt>Mon 04 November 2019</dt>
-	<dd><a href='http://peetronics.com/WhatIHaveLearnedToday-000.html'>What I Have Learned Today - #000</a></dd>
-  </dl>
-</div> <!-- /#archives-body -->
+<article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+  <header class="article-header">
+<abbr class="article-header-date">
+    Fri 08 November 2019 -
+        read time: 2 min.
+</abbr><h1>
+  <a href="http://peetronics.com/WhatIHaveLearnedToday-004.html" rel="bookmark"
+     title="Permalink to What I Have Learned Today - #004">
+    What I Have Learned Today - #004
+  </a>
+</h1><div class="article-header-info">
+  <p>
+<!--    -->
+<!--      Posted by <a href="http://peetronics.com/author/peet-michielsen.html">Peet Michielsen</a>-->
+<!--    -->
+<!--    in-->
+<!--    <a href="http://peetronics.com/category/blog.html">-->
+<!--      Blog</a>-->
+<!--    -->
+<!--        Approx. read time: 2 min.-->
+<!--    -->
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->  </header>
+  <div class="content-body" itemprop="text articleBody">
+	<p><img alt="number_of_permutations = 3 * 6 * 8 * 2 * 13 * 2 * 2 * 2 - print(number_of_permutations) - 29952" src="http://peetronics.com/images/permutations.png"></p>
+<h1>Pairwise Testing</h1>
+<p>I have learned about <a href="https://www.softwaretestinghelp.com/what-is-pairwise-testing/">pairwise testing</a> (or sometimes called all-pairs testing) in the past as being a good test specification technique to come up with a meaningful and manageable set of test cases. Until now I have experimented with it but never used it in anger.    </p>
+<h1>All-pairs in practice</h1>
+<p>At the moment I am working on a test for a complex feature of the system pictured below:  </p>
+<p><img alt="Optos Silverstone; ultra-widefield retinal imaging device with integrated, UWF-guided swept source OCT." src="http://peetronics.com/images/indy-right.png"></p>
+<p>In a workshop session this morning I gathered subject matter experts, and defined a set of parameters relevant for the feature under test. And there are a lot of them, with each a number of possible values.  </p>
+<p>Getting a full coverage with all possible permutations would have resulted in <strong>29952 test cases</strong>. For reference, with the way the system works (keep complex in mind) it takes 1/2 an hour to fully run and analyse 1 test case. This would take almost 2 years(!) back-to-back testing to get through.  </p>
+<p>With using the test specification technique of pairwise testing, I managed to reduce the set of test cases to 62. That is a big reduction but it doesn’t compromise on coverage. With execution these tests (still 31 hours but it only will be run over the weekend) there is confidence this feature will be adequately covered.  </p>
+<h1>Tools</h1>
+<p>To make life easier applying pairwise testing it is highly recommended to use a tool. There are various ones out there; a list of them are mentioned in this <a href="https://www.softwaretestinghelp.com/what-is-pairwise-testing/">article</a>.  </p>
+<p>The one tool I particularly like is the Pairwise Independent Combinatorial Tool <a href="https://github.com/microsoft/pict">(PICT)</a> from Microsoft. (turns out they do make useful products 😉). The mean reason I like is, that it is one executable which completely runs from the command line. It has got a lot of flexibility and executes quick.  </p>
+<p>A command line tool might not be your cup of tea; have a look at the other tools 😃.  </p>
+<p>Happy pairwising!  </p>
+<p><em>This post is part of a series of articles about “What I Have Learned Today”; acknowledging every day the thing I have learned. Feel free to read the other posts. all opinions in this article are my own and not necessarily represent the views of my employer.</em></p><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  
+
+</article>
         </div><!-- /content -->
 
         <div class="col-md-3 sidebar-nav" id="sidebar">

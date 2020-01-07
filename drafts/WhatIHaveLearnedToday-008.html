@@ -92,7 +92,7 @@
   <header class="article-header">
 <abbr class="article-header-date">
     Tue 12 November 2019 -
-        read time: 1 min.
+        read time: 2 min.
 </abbr><h1>
   <a href="http://peetronics.com/drafts/WhatIHaveLearnedToday-008.html" rel="bookmark"
      title="Permalink to What I Have Learned Today - #008">
@@ -107,13 +107,13 @@
 <!--    <a href="http://peetronics.com/category/blog.html">-->
 <!--      Blog</a>-->
 <!--    -->
-<!--        Approx. read time: 1 min.-->
+<!--        Approx. read time: 2 min.-->
 <!--    -->
     &nbsp;&nbsp;
   </p>
 </div> <!-- /.article-header-info -->  </header>
   <div class="content-body" itemprop="text articleBody">
-	
+	<p>RefactoringI’m no stranger to code refactoring. It is a well adopted practice within our team. It has many benefits. Read this blog post if you want to know why.Some benefits not listed in the article above:Get a better understanding of your code-baseLearn about the coding practices your colleagues useGet to know about used frameworks, modules and packagesAnd that is what happened today; I learned more about a framework we useBehaveIn our Python test automation framework we use Behave, a Behaviour Driven Development implementation in Python. It has a concept of context as a way to pass around data. We do use context in our framework but not to its fullest potential.While working on an area of our code-base today, I noticed that the way we deal with (global) parameters is quite inconsistent and convoluted. Knowing about behave context I took the opportunity to read a bit more about the workings and see if this could be used as a replacement of global variables.One hour later, I pushed a PR which gets rid of the messy variables implementation and replaces it with the more elegant context concept. See the following code snippet as a small example:user_data = (get_user_data(context.config.userdata))print(“<strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em> context data </em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong>”)context.allow_fail = get_user_data_value(user_data, “ALLOW_FAIL”, ALLOW_FAIL)context.app_name = get_user_data_value(user_data, “APP_NAME”, APP_NAME)context.response_times = get_user_data_value(user_data, “RESPONSE_TIMES”, RESPONSE_TIMES)context.configuration_file = get_user_data_value(user_data, “CONFIGURATION_FILE”, CONFIGURATION_FILE)context.dev_mode = get_user_data_value(user_data, “DEV_MODE”, DEV_MODE)ConclusionYou can learn everywhere and every time. Keep learning!This post is part of a series of articles about “What I Have Learned Today”; acknowledging every day the thing I have learned. Feel free to read the other posts. all opinions in this article are my own and not necessarily represent the views of my employer.</p><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
   
 
@@ -154,11 +154,41 @@
 
 <h4><i class="fas fa-tags fa-fw fa-lg"></i> Tags</h4>
 <p class="tag-cloud">
-      <a href="http://peetronics.com/tag/productivity.html">
-        <i class="fas fa-tag fa-fw fa-lg"></i>Productivity
+      <a href="http://peetronics.com/tag/testing.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Testing
       </a>
       <a href="http://peetronics.com/tag/what-i-have-learned-today.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>What I Have Learned Today
+      </a>
+      <a href="http://peetronics.com/tag/pairwise-testing.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Pairwise Testing
+      </a>
+      <a href="http://peetronics.com/tag/test-specification.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Test Specification
+      </a>
+      <a href="http://peetronics.com/tag/pict.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Pict
+      </a>
+      <a href="http://peetronics.com/tag/show-and-tell.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Show And Tell
+      </a>
+      <a href="http://peetronics.com/tag/optos.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Optos
+      </a>
+      <a href="http://peetronics.com/tag/galahad.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Galahad
+      </a>
+      <a href="http://peetronics.com/tag/information.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Information
+      </a>
+      <a href="http://peetronics.com/tag/portmanteaus.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Portmanteaus
+      </a>
+      <a href="http://peetronics.com/tag/flinciple.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Flinciple
+      </a>
+      <a href="http://peetronics.com/tag/productivity.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Productivity
       </a>
       <a href="http://peetronics.com/tag/shortcut-keys.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Shortcut Keys
