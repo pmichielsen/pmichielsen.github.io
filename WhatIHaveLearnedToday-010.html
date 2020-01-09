@@ -8,7 +8,7 @@
     <meta name="author" content="Peet Michielsen" />
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
 
-    <title>What I Have Learned Today - #008 - PeetRonics' blog</title>
+    <title>What I Have Learned Today - #010 - PeetRonics' blog</title>
 
    
         <link rel="stylesheet"
@@ -91,12 +91,12 @@
 <article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
   <header class="article-header">
 <abbr class="article-header-date">
-    Tue 12 November 2019 -
+    Thu 14 November 2019 -
         read time: 2 min.
 </abbr><h1>
-  <a href="http://peetronics.com/drafts/WhatIHaveLearnedToday-008.html" rel="bookmark"
-     title="Permalink to What I Have Learned Today - #008">
-    What I Have Learned Today - #008
+  <a href="http://peetronics.com/WhatIHaveLearnedToday-010.html" rel="bookmark"
+     title="Permalink to What I Have Learned Today - #010">
+    What I Have Learned Today - #010
   </a>
 </h1><div class="article-header-info">
   <p>
@@ -113,7 +113,23 @@
   </p>
 </div> <!-- /.article-header-info -->  </header>
   <div class="content-body" itemprop="text articleBody">
-	<p>RefactoringI’m no stranger to code refactoring. It is a well adopted practice within our team. It has many benefits. Read this blog post if you want to know why.Some benefits not listed in the article above:Get a better understanding of your code-baseLearn about the coding practices your colleagues useGet to know about used frameworks, modules and packagesAnd that is what happened today; I learned more about a framework we useBehaveIn our Python test automation framework we use Behave, a Behaviour Driven Development implementation in Python. It has a concept of context as a way to pass around data. We do use context in our framework but not to its fullest potential.While working on an area of our code-base today, I noticed that the way we deal with (global) parameters is quite inconsistent and convoluted. Knowing about behave context I took the opportunity to read a bit more about the workings and see if this could be used as a replacement of global variables.One hour later, I pushed a PR which gets rid of the messy variables implementation and replaces it with the more elegant context concept. See the following code snippet as a small example:user_data = (get_user_data(context.config.userdata))print(“<strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em> context data </em></strong><strong><em>*</em></strong><strong><em>*</em></strong><strong><em>*</em></strong>”)context.allow_fail = get_user_data_value(user_data, “ALLOW_FAIL”, ALLOW_FAIL)context.app_name = get_user_data_value(user_data, “APP_NAME”, APP_NAME)context.response_times = get_user_data_value(user_data, “RESPONSE_TIMES”, RESPONSE_TIMES)context.configuration_file = get_user_data_value(user_data, “CONFIGURATION_FILE”, CONFIGURATION_FILE)context.dev_mode = get_user_data_value(user_data, “DEV_MODE”, DEV_MODE)ConclusionYou can learn everywhere and every time. Keep learning!This post is part of a series of articles about “What I Have Learned Today”; acknowledging every day the thing I have learned. Feel free to read the other posts. all opinions in this article are my own and not necessarily represent the views of my employer.</p><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<p><img alt="code snippet" src="http://peetronics.com/images/realpath.png" width="100%"> </p>
+<p>I was fed up with all the hard-coded paths in our code repository (Python). Thought there must be a better, more elegant way. And it appears there is.  </p>
+<p>Today I <strong>learned</strong> about <code>os.path.realpath(path)</code>. This function resolves the full path of the specified file or directory, based on the path from where your script is run. An example implementation:  </p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os.path</span>
+
+<span class="n">resource_directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="s2">&quot;output&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">resource_directory</span><span class="p">)</span>
+
+<span class="c1"># &gt;&gt;&gt; C:\git_repos\01_Private_Projects\Python_snippets\output</span>
+</pre></div>
+
+
+<p>Currently I’m going through our codebase and see where we can replace hard coded paths with the <code>os.path.realpath</code> function. Neat! Full documentation on this function and the whole <code>os.path</code> module can be found <a href="https://docs.python.org/3/library/os.path.html">here</a>.  </p>
+<p><strong>Bonus tip</strong>: In the code snippet above you can see I only import <code>os.path</code> and not the whole <code>os</code> module. In Python is good practice only to import what you need. Import more can pollute the namespace and can cause confusion and conflicts. Never ever do <code>import * from blah</code> !!!  </p>
+<h1>Conclusion</h1>
+<p>It is worth solving bug-bears. In this example, code-base. Doing so will expand the knowledge of the thing you are working on/with.  </p>
+<p><em>This post is part of a series of articles about “What I Have Learned Today”; acknowledging every day the thing I have learned. Feel free to read the other posts. all opinions in this article are my own and not necessarily represent the views of my employer.</em></p><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
   
 
@@ -154,11 +170,65 @@
 
 <h4><i class="fas fa-tags fa-fw fa-lg"></i> Tags</h4>
 <p class="tag-cloud">
-      <a href="http://peetronics.com/tag/testing.html">
-        <i class="fas fa-tag fa-fw fa-lg"></i>Testing
+      <a href="http://peetronics.com/tag/python.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Python
+      </a>
+      <a href="http://peetronics.com/tag/pathname-manipulations.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Pathname Manipulations
       </a>
       <a href="http://peetronics.com/tag/what-i-have-learned-today.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>What I Have Learned Today
+      </a>
+      <a href="http://peetronics.com/tag/bugbears.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Bugbears
+      </a>
+      <a href="http://peetronics.com/tag/public-speaking.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Public Speaking
+      </a>
+      <a href="http://peetronics.com/tag/ministry-of-testing.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Ministry Of Testing
+      </a>
+      <a href="http://peetronics.com/tag/abstract-review.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Abstract Review
+      </a>
+      <a href="http://peetronics.com/tag/skills.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Skills
+      </a>
+      <a href="http://peetronics.com/tag/behave.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Behave
+      </a>
+      <a href="http://peetronics.com/tag/refactoring.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Refactoring
+      </a>
+      <a href="http://peetronics.com/tag/numbers.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Numbers
+      </a>
+      <a href="http://peetronics.com/tag/visualise.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Visualise
+      </a>
+      <a href="http://peetronics.com/tag/transform.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Transform
+      </a>
+      <a href="http://peetronics.com/tag/food.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Food
+      </a>
+      <a href="http://peetronics.com/tag/work-life-balance.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Work Life Balance
+      </a>
+      <a href="http://peetronics.com/tag/cooking-skils.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Cooking Skils
+      </a>
+      <a href="http://peetronics.com/tag/productivity.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Productivity
+      </a>
+      <a href="http://peetronics.com/tag/chrome.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Chrome
+      </a>
+      <a href="http://peetronics.com/tag/searchbar.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Searchbar
+      </a>
+      <a href="http://peetronics.com/tag/testing.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Testing
       </a>
       <a href="http://peetronics.com/tag/pairwise-testing.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Pairwise Testing
@@ -187,9 +257,6 @@
       <a href="http://peetronics.com/tag/flinciple.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Flinciple
       </a>
-      <a href="http://peetronics.com/tag/productivity.html">
-        <i class="fas fa-tag fa-fw fa-lg"></i>Productivity
-      </a>
       <a href="http://peetronics.com/tag/shortcut-keys.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Shortcut Keys
       </a>
@@ -201,9 +268,6 @@
       </a>
       <a href="http://peetronics.com/tag/personal-challenge.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Personal Challenge
-      </a>
-      <a href="http://peetronics.com/tag/ministry-of-testing.html">
-        <i class="fas fa-tag fa-fw fa-lg"></i>Ministry of Testing
       </a>
 </p>
 <h4><i class="fas fa-rss fa-fw fa-lg"></i> Feeds</h4>
