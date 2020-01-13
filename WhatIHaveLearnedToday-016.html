@@ -8,7 +8,7 @@
     <meta name="author" content="Peet Michielsen" />
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
 
-    <title>What I Have Learned Today - #012 - PeetRonics' blog</title>
+    <title>What I Have Learned Today - #016 - PeetRonics' blog</title>
 
    
         <link rel="stylesheet"
@@ -91,12 +91,12 @@
 <article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
   <header class="article-header">
 <abbr class="article-header-date">
-    Sat 16 November 2019 -
+    Wed 20 November 2019 -
         read time: 2 min.
 </abbr><h1>
-  <a href="http://peetronics.com/drafts/WhatIHaveLearnedToday-012.html" rel="bookmark"
-     title="Permalink to What I Have Learned Today - #012">
-    What I Have Learned Today - #012
+  <a href="http://peetronics.com/WhatIHaveLearnedToday-016.html" rel="bookmark"
+     title="Permalink to What I Have Learned Today - #016">
+    What I Have Learned Today - #016
   </a>
 </h1><div class="article-header-info">
   <p>
@@ -113,7 +113,22 @@
   </p>
 </div> <!-- /.article-header-info -->  </header>
   <div class="content-body" itemprop="text articleBody">
-	<p>DistractionOne of the things that I constantly try to get better at is not getting distracted. Yes, I can get easily distracted. Not in a worrying sense but still.For example, if I’m in a room where there is a television playing while having a conversation with somebody, sooner or later I will start looking at the moving images on screen. Nothing to worry about, but still not very polite for the person I’m having a chat with.Luckily I’m well aware of my flaw, Which means I can put mechanisms in place to improve. In the example of the playing television, if possible I try to sit with my back to the screen.Productivity killerDistraction can be a productivity killer. In my case it is not too bad, but yet I want to be as productive as possible. Needless to say that in my work I want to remove distraction triggers as much as I can. One of the biggest ones for me are notifications. Think Outlook, Skype, Slack, all the social medias; that kind of stuff. If not strictly needed I will switch off notifications completely, or at least go into the settings of any app and tweak the notification settings to my liking. Of course , these ones below always get a block from me:Distracted by your wristHaving a smart-watch is not good in relation to distraction. Sure, once I got myself one it was great to be able to get notified on your watch, without having to look at your phone. But I have switched that off for a while now and it has been a blessing.Today, in my continuous effort to cut distractions I’ve now switched off the last bit of attention-grabbing from my wrist; the fitness tracking. So no more stand reminders 10 minutes to the hour while I’m in full flow of coding. No more “you still need to burn xx calories to reach your daily goal” while I’m driving.Lets see how it goes. Probably I won’t miss it a bit!This post is part of a series of articles about “What I Have Learned Today”; acknowledging every day the thing I have learned. Feel free to read the other posts. all opinions in this article are my own and not necessarily represent the views of my employer.</p><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<p><img alt="Python debugging with PDB" src="http://peetronics.com/images/python-debugging.jpg" width="100%">  </p>
+<h1>Lazy man’s debugging</h1>
+<p>Sure I’m not the only one out, but I’m still the kind of person that does debugging by dotting the code with <code>print()</code> statements. And with the release of <a href="https://docs.python.org/3/whatsnew/3.8.html">Python 3.8</a> and the f-string support it seems that they want me to keep to stick to that habit:  </p>
+<div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;eric_idle&quot;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">member_since</span> <span class="o">=</span> <span class="n">date</span><span class="p">(</span><span class="mi">1975</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="sa">f</span><span class="s2">&quot;{user=} {member_since=}&quot;</span>
+<span class="n">user</span><span class="o">=</span><span class="s2">&quot;eric_idle&quot;</span> <span class="n">member_since</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">1975</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">31</span><span class="p">)</span>
+</pre></div>
+
+
+<p>That’s a nice addition.  </p>
+<h1>A better alternative</h1>
+<p>At my work I’m not making a secret of my approach to debugging and a colleague once pointed out the debug capabilities of the <a href="https://www.jetbrains.com/pycharm/">IDE</a>. Tried that but never caught on with me. So yes, I still have the ubiquitous print statements everywhere, which I always forget to remove.  </p>
+<p>Today I was joking about my debug super powers again and then another colleague pointed out <a href="https://docs.python.org/3/library/pdb.html">PDB</a>; a Python debugger that can be used from the command line. I found a handy <a href="https://realpython.com/python-debugging-pdb/">tutorial</a> from <em>Real Python</em> which I followed which got me started.  </p>
+<p>Still a lot to <strong>learn</strong> on this, but practice makes perfect. So I will stick with this. So far so good.  </p>
+<p><em>This post is part of a series of articles about “What I Have Learned Today”; acknowledging every day the thing I have learned. Feel free to read the other posts. all opinions in this article are my own and not necessarily represent the views of my employer.</em></p><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
   
 
@@ -154,14 +169,92 @@
 
 <h4><i class="fas fa-tags fa-fw fa-lg"></i> Tags</h4>
 <p class="tag-cloud">
+      <a href="http://peetronics.com/tag/what-i-have-learned-today.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>What I Have Learned Today
+      </a>
+      <a href="http://peetronics.com/tag/strangers.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Strangers
+      </a>
+      <a href="http://peetronics.com/tag/conversations.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Conversations
+      </a>
+      <a href="http://peetronics.com/tag/comfort-zone.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Comfort Zone
+      </a>
+      <a href="http://peetronics.com/tag/software-development.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Software Development
+      </a>
+      <a href="http://peetronics.com/tag/code-review.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Code Review
+      </a>
+      <a href="http://peetronics.com/tag/testing.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Testing
+      </a>
       <a href="http://peetronics.com/tag/python.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Python
       </a>
+      <a href="http://peetronics.com/tag/good-coding-practices.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Good Coding Practices
+      </a>
+      <a href="http://peetronics.com/tag/remove-star.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Remove Star
+      </a>
+      <a href="http://peetronics.com/tag/android.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Android
+      </a>
+      <a href="http://peetronics.com/tag/nfc-tags.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>NFC Tags
+      </a>
+      <a href="http://peetronics.com/tag/lifehacker.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Lifehacker
+      </a>
+      <a href="http://peetronics.com/tag/debugging.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Debugging
+      </a>
+      <a href="http://peetronics.com/tag/command-line.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Command Line
+      </a>
+      <a href="http://peetronics.com/tag/productivity.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Productivity
+      </a>
+      <a href="http://peetronics.com/tag/slideshow.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Slideshow
+      </a>
+      <a href="http://peetronics.com/tag/markdown.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Markdown
+      </a>
+      <a href="http://peetronics.com/tag/programming.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Programming
+      </a>
+      <a href="http://peetronics.com/tag/code-formatting.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Code Formatting
+      </a>
+      <a href="http://peetronics.com/tag/black.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Black
+      </a>
+      <a href="http://peetronics.com/tag/board-games.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Board Games
+      </a>
+      <a href="http://peetronics.com/tag/skills.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Skills
+      </a>
+      <a href="http://peetronics.com/tag/set.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Set
+      </a>
+      <a href="http://peetronics.com/tag/apple-watch.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Apple Watch
+      </a>
+      <a href="http://peetronics.com/tag/distraction.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Distraction
+      </a>
+      <a href="http://peetronics.com/tag/notifications.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Notifications
+      </a>
+      <a href="http://peetronics.com/tag/mistakes.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Mistakes
+      </a>
       <a href="http://peetronics.com/tag/pathname-manipulations.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Pathname Manipulations
-      </a>
-      <a href="http://peetronics.com/tag/what-i-have-learned-today.html">
-        <i class="fas fa-tag fa-fw fa-lg"></i>What I Have Learned Today
       </a>
       <a href="http://peetronics.com/tag/bugbears.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Bugbears
@@ -174,9 +267,6 @@
       </a>
       <a href="http://peetronics.com/tag/abstract-review.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Abstract Review
-      </a>
-      <a href="http://peetronics.com/tag/skills.html">
-        <i class="fas fa-tag fa-fw fa-lg"></i>Skills
       </a>
       <a href="http://peetronics.com/tag/behave.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Behave
@@ -202,17 +292,11 @@
       <a href="http://peetronics.com/tag/cooking-skils.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Cooking Skils
       </a>
-      <a href="http://peetronics.com/tag/productivity.html">
-        <i class="fas fa-tag fa-fw fa-lg"></i>Productivity
-      </a>
       <a href="http://peetronics.com/tag/chrome.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Chrome
       </a>
       <a href="http://peetronics.com/tag/searchbar.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Searchbar
-      </a>
-      <a href="http://peetronics.com/tag/testing.html">
-        <i class="fas fa-tag fa-fw fa-lg"></i>Testing
       </a>
       <a href="http://peetronics.com/tag/pairwise-testing.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Pairwise Testing
