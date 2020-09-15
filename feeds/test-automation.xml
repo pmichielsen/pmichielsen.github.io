@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PeetRonics' blog - Test automation</title><link href="http://peetronics.com/" rel="alternate"></link><link href="http://peetronics.com/feeds/test-automation.xml" rel="self"></link><id>http://peetronics.com/</id><updated>2020-09-15T21:00:00+01:00</updated><subtitle>All can be true!</subtitle><entry><title>GUI test automation for Windows desktop</title><link href="http://peetronics.com/GUITestAutomationForWindowsDesktop.html" rel="alternate"></link><published>2020-09-15T21:00:00+01:00</published><updated>2020-09-15T21:00:00+01:00</updated><author><name>Peet Michielsen</name></author><id>tag:peetronics.com,2020-09-15:/GUITestAutomationForWindowsDesktop.html</id><summary type="html">&lt;p&gt;A collection of resources to be used for Windows desktop test automation, and things to consider in choosing your tooling&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Screenshot of a windows 3.1 desktop" src="http://peetronics.com/images/windows-desktop.png" width="80%"&gt;&lt;/p&gt;
+&lt;h1&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;If you look at conference talk and workshop topics, (online) articles, tutorials, and courses, you could get the impression that most software testing revolves around &lt;strong&gt;web&lt;/strong&gt; and &lt;strong&gt;mobile&lt;/strong&gt;. 
+&lt;a href="https://www.practitest.com/resource/state-of-testing-report-2020/"&gt;The 2020 state of testing report&lt;/a&gt;, curated and published by Practitest, underwrites that. Web and mobile have got the biggest share of the technologies being tested (75% and 59% respectively). 
+&lt;strong&gt;Desktop&lt;/strong&gt; is coming in third with 45%. Which makes you think why this technology is not getting more attention in the world of testing? 
+It's about time that we put the limelight on &lt;strong&gt;desktop testing&lt;/strong&gt;; &lt;strong&gt;Windows&lt;/strong&gt; desktop &lt;strong&gt;automated&lt;/strong&gt; testing to be precise.  &lt;/p&gt;
+&lt;p&gt;The first part of this article will give an overview of available tools for Windows desktop automation. 
+Then it will go into the things to consider in choosing a tool. &lt;/p&gt;
+&lt;h1&gt;Available tools&lt;/h1&gt;
+&lt;p&gt;This will not be a complete overview on available desktop test automation tools. Things that are currently not included (but might be added later):  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Paid for tools. I have not done enough research into these. Only open source tools are listed.&lt;/li&gt;
+&lt;li&gt;Tools for other operating systems than Windows (e.g. Linux, MacOS), as I've not had a lot of exposure on this.&lt;/li&gt;
+&lt;li&gt;Tools that are not aimed at (aiding) GUI automation (e.g. database, API, network). These are not specifically for desktop, so won't be covering those.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Joe Colantonio of &lt;a href="https://testguild.com/"&gt;Test Guild&lt;/a&gt; (&lt;a href="https://twitter.com/joecolantonio"&gt;@joecolantonio&lt;/a&gt;) already has put together a very extensive list of &lt;a href="https://testguild.com/automation-tools-desktop/"&gt;Automation tools for desktop applications&lt;/a&gt;. 
+Follow the link to Joe's article for a full description of each of these following tools:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/microsoft/WinAppDriver"&gt;Windows Application Driver&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/2gis/Winium"&gt;Winium&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://teststackwhite.readthedocs.io/en/latest/"&gt;White Framework&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.eclipse.org/jubula/"&gt;Jubula&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pywinauto.readthedocs.io/en/latest/contents.html"&gt;pywinauto&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.oracle.com/enterprise-manager/downloads/oats-downloads.html"&gt;Oracle Application Testing Suite OATS&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://sikulix.com/"&gt;SikuliX&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/FlaUI/FlaUI"&gt;FlaUI&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.autoitscript.com/site/"&gt;AutoIt&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.zaptest.com/"&gt;Zaptest&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AirtestProject/Airtest"&gt;AirTest&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://appium.io/"&gt;Appium&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Almost as important as the tools for automated test execution itself, are the tools that support you in creating your automation. 
+For web automation, &lt;em&gt;DevTools&lt;/em&gt; are invaluable in that respect (&lt;em&gt;&lt;F12&gt;&lt;/em&gt;, built in any modern browser). Similar tools are often not readily available in desktop applications. 
+But there is definitely help available. A collection of &lt;a href="https://github.com/blackrosezy/gui-inspect-tool"&gt;GUI inspect tools can be found here&lt;/a&gt; (follow the link). 
+With those tools you can inspect the application you want to test and look screen object identifiers. The one I particularly like is &lt;a href="https://github.com/blackrosezy/gui-inspect-tool/blob/master/UISpy.exe"&gt;UISpy.exe&lt;/a&gt;.  &lt;/p&gt;
+&lt;p&gt;A last tool I would like to mention is not necessarily a desktop GUI automation tool, but definitely one that can help in testing a Windows desktop application. 
+It is called &lt;a href="https://accessibilityinsights.io/en/"&gt;Accessibility Insights&lt;/a&gt;, and is aimed at inspecting and assessing the accessibility of an application for people with and impairment like vision loss or colour blindness.&lt;/p&gt;
+&lt;h1&gt;Considerations&lt;/h1&gt;
+&lt;p&gt;In choosing a test automation tool or framework, in general, there are a lot of things things to consider, like:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Supported programming languages&lt;/li&gt;
+&lt;li&gt;Reporting capabilities&lt;/li&gt;
+&lt;li&gt;Integration with other tools&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://club.ministryoftesting.com/t/considerations-when-comparing-automation-frameworks/41864"&gt;A more complete overview of general considerations can be found on the Ministry of Testing website&lt;/a&gt;.  &lt;/p&gt;
+&lt;p&gt;In addition to the above, there are a few things specific to desktop test automation to keep in mind:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Supported operating systems&lt;/strong&gt;. Not all available tools will work with each version of Windows. We would have loved to use &lt;a href="https://github.com/microsoft/WinAppDriver"&gt;WinAppDriver&lt;/a&gt; as our platform, but it is only available for Windows 10.&lt;/li&gt;
+&lt;li&gt;Windows has got &lt;a href="https://docs.microsoft.com/en-us/windows/apps/desktop/choose-your-platform"&gt;different &lt;strong&gt;application platforms&lt;/strong&gt;&lt;/a&gt;, which all work slightly differently. Be sure your tool supports the platform you want to target.&lt;/li&gt;
+&lt;li&gt;Some desktop applications have got their own specific &lt;strong&gt;frontend&lt;/strong&gt;, depending on which underlying technology is being used. For example, GUIs from a JAVA or Oracle application are constructed in a different way, and there are specific tools supporting those type of applications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Wrapping up&lt;/h1&gt;
+&lt;p&gt;The aim of this post has not been to give an &lt;em&gt;ultimate&lt;/em&gt; list of available desktop test automation tools. 
+But sure I will keep adding to it when I come across tools in this category that not yet have been mentioned. &lt;br&gt;
+And please &lt;a href="https://twitter.com/PeetRonics"&gt;send me a message&lt;/a&gt; if you know of a tool that should be mentioned here.&lt;/p&gt;&lt;script src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;</content><category term="Blog"></category><category term="Testing"></category><category term="Test automation"></category><category term="Windows"></category></entry></feed>

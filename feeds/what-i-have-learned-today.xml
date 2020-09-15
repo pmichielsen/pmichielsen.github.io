@@ -299,7 +299,13 @@ I did a code refactor &lt;a href="http://peetronics.com/WhatIHaveLearnedToday-00
 &lt;li&gt;A &lt;strong&gt;trillion&lt;/strong&gt; seconds is well after the year &lt;strong&gt;33,700ce&lt;/strong&gt;(!)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Another example of transformation is done in the following video, where the history of the universe is compared with a row of dominoes. Out of 13,799 dominoes, spanning from the big bang to now, only the last 3 represents where human life takes shape. Let that sink in for a moment…  &lt;/p&gt;
-&lt;p&gt;{% youtube ObngtuPFI8A %}&lt;/p&gt;
+&lt;p&gt;&lt;span class="videobox"&gt;
+                    &lt;iframe width="640" height="390"
+                        src='https://www.youtube.com/embed/ObngtuPFI8A'
+                        frameborder='0' webkitAllowFullScreen
+                        mozallowfullscreen allowFullScreen&gt;
+                    &lt;/iframe&gt;
+                &lt;/span&gt;&lt;/p&gt;
 &lt;h1&gt;Conclusion&lt;/h1&gt;
 &lt;p&gt;So, next time when you see a big number, or have to imagine what an x amount of y looks like, try to &lt;strong&gt;visualise&lt;/strong&gt; or &lt;strong&gt;transform&lt;/strong&gt;.&lt;/p&gt;
 &lt;h1&gt;Update&lt;/h1&gt;

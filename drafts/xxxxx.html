@@ -8,7 +8,7 @@
     <meta name="author" content="Peet Michielsen" />
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
 
-    <title>What I Have Learned Today - #021 - PeetRonics' blog</title>
+    <title>Setting up a test automation framework - PeetRonics' blog</title>
 
    
         <link rel="stylesheet"
@@ -91,12 +91,12 @@
 <article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
   <header class="article-header">
 <abbr class="article-header-date">
-    Mon 25 November 2019 -
-        read time: 2 min.
+    Tue 15 September 2020 -
+        read time: 1 min.
 </abbr><h1>
-  <a href="http://peetronics.com/WhatIHaveLearnedToday-021.html" rel="bookmark"
-     title="Permalink to What I Have Learned Today - #021">
-    What I Have Learned Today - #021
+  <a href="http://peetronics.com/drafts/xxxxx.html" rel="bookmark"
+     title="Permalink to Setting up a test automation framework">
+    Setting up a test automation framework
   </a>
 </h1><div class="article-header-info">
   <p>
@@ -107,22 +107,77 @@
 <!--    <a href="http://peetronics.com/category/blog.html">-->
 <!--      Blog</a>-->
 <!--    -->
-<!--        Approx. read time: 2 min.-->
+<!--        Approx. read time: 1 min.-->
 <!--    -->
     &nbsp;&nbsp;
   </p>
 </div> <!-- /.article-header-info -->  </header>
   <div class="content-body" itemprop="text articleBody">
-	<p><img alt="Templatemaker.nl" src="http://peetronics.com/images/templatemaker.png">  </p>
-<h1>Keeping the balance</h1>
-<p>When you have a job like me, where you sit a big part of your day <em>behind</em> your computer (or in <em>front</em> of a computer screen; same thing, weird isn’t it?), you need to have something outside your work that is away from your screen. At least, that is my belief as I think it will help keeping you sane.  </p>
-<p>And that <em>something else</em> can be anything. One of the things I like to do is cooking. I’ve already <a href="https://medium.com/@peetronics/what-i-have-learned-today-006-57b6ee7fff0a">written</a> about that 2 weeks ago.  </p>
-<h1>Getting crafty</h1>
-<p>With the holiday season upon us, another thing I like to do is making my own Christmas decorations and little Christmas presents. Last year I made little Rudolph hangers from corks.  </p>
-<p><img alt="Cork Rudolph reindeers" src="http://peetronics.com/images/rudolph.jpg" width="80%">  </p>
-<p>For this year I’m wanting to make my own gift boxes. Measuring and drawing them completely from scratch might be a step to far. Luckily I <strong>learned</strong> about a website that does the heavy lifting for you. It’s called <a href="https://www.templatemaker.nl/en/">templatemaker.nl</a>. It has got heaps of box designs to choose from and each can be adjusted to your liking. Once you’ve downloaded your template you can further personalise it.  </p>
-<p>Time to get my craft knife out! 🎄  </p>
-<p><em>This post is part of a series of articles about “What I Have Learned Today”; acknowledging every day the thing I have learned. Feel free to read the other posts. all opinions in this article are my own and not necessarily represent the views of my employer.</em></p><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<h1>Our implementation</h1>
+<p><img alt="Diagram of a test automation implementation" src="http://peetronics.com/images/winAutomation-structure.png" width="80%"></p>
+<div class="highlight"><pre><span></span><code><span class="err">winAutomation/</span>
+<span class="err">├── products/</span>
+<span class="err">│   ├── common/</span>
+<span class="err">│   │   ├── actions/</span>
+<span class="err">│   │   │   ├── generic.py</span>
+<span class="err">│   │   │   └── server_interactions.py</span>
+<span class="err">│   │   └── resources/</span>
+<span class="err">│   │       └── keyboardDefault.py</span>
+<span class="err">│   ├── productA/</span>
+<span class="err">│   │   ├── actions/</span>
+<span class="err">│   │   │   ├── generic.py</span>
+<span class="err">│   │   │   ├── screenA.py</span>
+<span class="err">│   │   │   ├── screenB.py</span>
+<span class="err">│   │   │   └── screenC.py</span>
+<span class="err">│   │   ├── environment.py</span>
+<span class="err">│   │   ├── features/</span>
+<span class="err">│   │   │   ├── behave.ini</span>
+<span class="err">│   │   │   ├── test1.feature</span>
+<span class="err">│   │   │   └── test2.feature</span>
+<span class="err">│   │   ├── resources/</span>
+<span class="err">│   │   │   ├── config-default.xml</span>
+<span class="err">│   │   │   ├── createUsersForLoginTesting.cmd</span>
+<span class="err">│   │   │   └── log_lines.xml</span>
+<span class="err">│   │   ├── scripts/</span>
+<span class="err">│   │   │   ├── script1.py</span>
+<span class="err">│   │   │   └── script2.py</span>
+<span class="err">│   │   └── steps/</span>
+<span class="err">│   │       ├── stepFileA.py</span>
+<span class="err">│   │       ├── stepFileB.py</span>
+<span class="err">│   │       └── stepFileC.py</span>
+<span class="err">│   └── productB/</span>
+<span class="err">│       ├── actions/</span>
+<span class="err">│       │   ├── generic.py</span>
+<span class="err">│       │   ├── screenA.py</span>
+<span class="err">│       │   ├── screenB.py</span>
+<span class="err">│       │   └── screenC.py</span>
+<span class="err">│       ├── environment.py</span>
+<span class="err">│       ├── features/</span>
+<span class="err">│       │   ├── behave.ini</span>
+<span class="err">│       │   ├── test1.feature</span>
+<span class="err">│       │   └── test2.feature</span>
+<span class="err">│       ├── resources/</span>
+<span class="err">│       │   ├── config-default.xml</span>
+<span class="err">│       │   ├── createUsersForLoginTesting.cmd</span>
+<span class="err">│       │   └── log_lines.xml</span>
+<span class="err">│       ├── scripts/</span>
+<span class="err">│       │   ├── script1.py</span>
+<span class="err">│       │   └── script2.py</span>
+<span class="err">│       └── steps/</span>
+<span class="err">│           ├── stepFileA.py</span>
+<span class="err">│           ├── stepFileB.py</span>
+<span class="err">│           └── stepFileC.py</span>
+<span class="err">├── pyWinAutoWrapper/</span>
+<span class="err">│   └── pyWinAutoWrapper.py</span>
+<span class="err">├── pyWinServer/</span>
+<span class="err">│   └── pyWinServer.py</span>
+<span class="err">├── readMe.md</span>
+<span class="err">└── tools/</span>
+<span class="err">    ├── changeConfig.py</span>
+<span class="err">    ├── getSystemInformation.py</span>
+<span class="err">    ├── installProduct.py</span>
+<span class="err">    └── logging.py</span>
+</code></pre></div><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
   
 

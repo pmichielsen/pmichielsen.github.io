@@ -8,7 +8,7 @@
     <meta name="author" content="Peet Michielsen" />
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
 
-    <title>What I Have Learned Today - #021 - PeetRonics' blog</title>
+    <title>GUI test automation for Windows desktop - PeetRonics' blog</title>
 
    
         <link rel="stylesheet"
@@ -91,12 +91,12 @@
 <article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
   <header class="article-header">
 <abbr class="article-header-date">
-    Mon 25 November 2019 -
-        read time: 2 min.
+    Tue 15 September 2020 -
+        read time: 3 min.
 </abbr><h1>
-  <a href="http://peetronics.com/WhatIHaveLearnedToday-021.html" rel="bookmark"
-     title="Permalink to What I Have Learned Today - #021">
-    What I Have Learned Today - #021
+  <a href="http://peetronics.com/GUITestAutomationForWindowsDesktop.html" rel="bookmark"
+     title="Permalink to GUI test automation for Windows desktop">
+    GUI test automation for Windows desktop
   </a>
 </h1><div class="article-header-info">
   <p>
@@ -107,22 +107,68 @@
 <!--    <a href="http://peetronics.com/category/blog.html">-->
 <!--      Blog</a>-->
 <!--    -->
-<!--        Approx. read time: 2 min.-->
+<!--        Approx. read time: 3 min.-->
 <!--    -->
     &nbsp;&nbsp;
   </p>
 </div> <!-- /.article-header-info -->  </header>
   <div class="content-body" itemprop="text articleBody">
-	<p><img alt="Templatemaker.nl" src="http://peetronics.com/images/templatemaker.png">  </p>
-<h1>Keeping the balance</h1>
-<p>When you have a job like me, where you sit a big part of your day <em>behind</em> your computer (or in <em>front</em> of a computer screen; same thing, weird isn’t it?), you need to have something outside your work that is away from your screen. At least, that is my belief as I think it will help keeping you sane.  </p>
-<p>And that <em>something else</em> can be anything. One of the things I like to do is cooking. I’ve already <a href="https://medium.com/@peetronics/what-i-have-learned-today-006-57b6ee7fff0a">written</a> about that 2 weeks ago.  </p>
-<h1>Getting crafty</h1>
-<p>With the holiday season upon us, another thing I like to do is making my own Christmas decorations and little Christmas presents. Last year I made little Rudolph hangers from corks.  </p>
-<p><img alt="Cork Rudolph reindeers" src="http://peetronics.com/images/rudolph.jpg" width="80%">  </p>
-<p>For this year I’m wanting to make my own gift boxes. Measuring and drawing them completely from scratch might be a step to far. Luckily I <strong>learned</strong> about a website that does the heavy lifting for you. It’s called <a href="https://www.templatemaker.nl/en/">templatemaker.nl</a>. It has got heaps of box designs to choose from and each can be adjusted to your liking. Once you’ve downloaded your template you can further personalise it.  </p>
-<p>Time to get my craft knife out! 🎄  </p>
-<p><em>This post is part of a series of articles about “What I Have Learned Today”; acknowledging every day the thing I have learned. Feel free to read the other posts. all opinions in this article are my own and not necessarily represent the views of my employer.</em></p><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<p><img alt="Screenshot of a windows 3.1 desktop" src="http://peetronics.com/images/windows-desktop.png" width="80%"></p>
+<h1>Introduction</h1>
+<p>If you look at conference talk and workshop topics, (online) articles, tutorials, and courses, you could get the impression that most software testing revolves around <strong>web</strong> and <strong>mobile</strong>. 
+<a href="https://www.practitest.com/resource/state-of-testing-report-2020/">The 2020 state of testing report</a>, curated and published by Practitest, underwrites that. Web and mobile have got the biggest share of the technologies being tested (75% and 59% respectively). 
+<strong>Desktop</strong> is coming in third with 45%. Which makes you think why this technology is not getting more attention in the world of testing? 
+It's about time that we put the limelight on <strong>desktop testing</strong>; <strong>Windows</strong> desktop <strong>automated</strong> testing to be precise.  </p>
+<p>The first part of this article will give an overview of available tools for Windows desktop automation. 
+Then it will go into the things to consider in choosing a tool. </p>
+<h1>Available tools</h1>
+<p>This will not be a complete overview on available desktop test automation tools. Things that are currently not included (but might be added later):  </p>
+<ul>
+<li>Paid for tools. I have not done enough research into these. Only open source tools are listed.</li>
+<li>Tools for other operating systems than Windows (e.g. Linux, MacOS), as I've not had a lot of exposure on this.</li>
+<li>Tools that are not aimed at (aiding) GUI automation (e.g. database, API, network). These are not specifically for desktop, so won't be covering those.  </li>
+</ul>
+<p>Joe Colantonio of <a href="https://testguild.com/">Test Guild</a> (<a href="https://twitter.com/joecolantonio">@joecolantonio</a>) already has put together a very extensive list of <a href="https://testguild.com/automation-tools-desktop/">Automation tools for desktop applications</a>. 
+Follow the link to Joe's article for a full description of each of these following tools:</p>
+<ul>
+<li><a href="https://github.com/microsoft/WinAppDriver">Windows Application Driver</a>  </li>
+<li><a href="https://github.com/2gis/Winium">Winium</a> </li>
+<li><a href="https://teststackwhite.readthedocs.io/en/latest/">White Framework</a> </li>
+<li><a href="https://www.eclipse.org/jubula/">Jubula</a> </li>
+<li><a href="https://pywinauto.readthedocs.io/en/latest/contents.html">pywinauto</a> </li>
+<li><a href="https://www.oracle.com/enterprise-manager/downloads/oats-downloads.html">Oracle Application Testing Suite OATS</a> </li>
+<li><a href="http://sikulix.com/">SikuliX</a> </li>
+<li><a href="https://github.com/FlaUI/FlaUI">FlaUI</a> </li>
+<li><a href="https://www.autoitscript.com/site/">AutoIt</a> </li>
+<li><a href="https://www.zaptest.com/">Zaptest</a> </li>
+<li><a href="https://github.com/AirtestProject/Airtest">AirTest</a></li>
+<li><a href="http://appium.io/">Appium</a>  </li>
+</ul>
+<p>Almost as important as the tools for automated test execution itself, are the tools that support you in creating your automation. 
+For web automation, <em>DevTools</em> are invaluable in that respect (<em><F12></em>, built in any modern browser). Similar tools are often not readily available in desktop applications. 
+But there is definitely help available. A collection of <a href="https://github.com/blackrosezy/gui-inspect-tool">GUI inspect tools can be found here</a> (follow the link). 
+With those tools you can inspect the application you want to test and look screen object identifiers. The one I particularly like is <a href="https://github.com/blackrosezy/gui-inspect-tool/blob/master/UISpy.exe">UISpy.exe</a>.  </p>
+<p>A last tool I would like to mention is not necessarily a desktop GUI automation tool, but definitely one that can help in testing a Windows desktop application. 
+It is called <a href="https://accessibilityinsights.io/en/">Accessibility Insights</a>, and is aimed at inspecting and assessing the accessibility of an application for people with and impairment like vision loss or colour blindness.</p>
+<h1>Considerations</h1>
+<p>In choosing a test automation tool or framework, in general, there are a lot of things things to consider, like:  </p>
+<ul>
+<li>Supported programming languages</li>
+<li>Reporting capabilities</li>
+<li>Integration with other tools</li>
+<li>...</li>
+</ul>
+<p><a href="https://club.ministryoftesting.com/t/considerations-when-comparing-automation-frameworks/41864">A more complete overview of general considerations can be found on the Ministry of Testing website</a>.  </p>
+<p>In addition to the above, there are a few things specific to desktop test automation to keep in mind:  </p>
+<ul>
+<li><strong>Supported operating systems</strong>. Not all available tools will work with each version of Windows. We would have loved to use <a href="https://github.com/microsoft/WinAppDriver">WinAppDriver</a> as our platform, but it is only available for Windows 10.</li>
+<li>Windows has got <a href="https://docs.microsoft.com/en-us/windows/apps/desktop/choose-your-platform">different <strong>application platforms</strong></a>, which all work slightly differently. Be sure your tool supports the platform you want to target.</li>
+<li>Some desktop applications have got their own specific <strong>frontend</strong>, depending on which underlying technology is being used. For example, GUIs from a JAVA or Oracle application are constructed in a different way, and there are specific tools supporting those type of applications.</li>
+</ul>
+<h1>Wrapping up</h1>
+<p>The aim of this post has not been to give an <em>ultimate</em> list of available desktop test automation tools. 
+But sure I will keep adding to it when I come across tools in this category that not yet have been mentioned. <br>
+And please <a href="https://twitter.com/PeetRonics">send me a message</a> if you know of a tool that should be mentioned here.</p><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
   
 
