@@ -1,5 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PeetRonics' blog</title><link href="http://peetronics.com/" rel="alternate"></link><link href="http://peetronics.com/feeds/all-en.atom.xml" rel="self"></link><id>http://peetronics.com/</id><updated>2020-09-15T21:00:00+01:00</updated><subtitle>All can be true!</subtitle><entry><title>GUI test automation for Windows desktop</title><link href="http://peetronics.com/GUITestAutomationForWindowsDesktop.html" rel="alternate"></link><published>2020-09-15T21:00:00+01:00</published><updated>2020-09-15T21:00:00+01:00</updated><author><name>Peet Michielsen</name></author><id>tag:peetronics.com,2020-09-15:/GUITestAutomationForWindowsDesktop.html</id><summary type="html">&lt;p&gt;A collection of resources to be used for Windows desktop test automation, and things to consider in choosing your tooling&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Screenshot of a windows 3.1 desktop" src="http://peetronics.com/images/windows-desktop.png" width="80%"&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PeetRonics' blog</title><link href="http://peetronics.com/" rel="alternate"></link><link href="http://peetronics.com/feeds/all-en.atom.xml" rel="self"></link><id>http://peetronics.com/</id><updated>2020-10-30T22:30:00+00:00</updated><subtitle>All can be true!</subtitle><entry><title></title><link href="http://peetronics.com/GrabTheOpportunity.html" rel="alternate"></link><published>2020-10-30T22:30:00+00:00</published><updated>2020-10-30T22:30:00+00:00</updated><author><name>Peet Michielsen</name></author><id>tag:peetronics.com,2020-10-30:/GrabTheOpportunity.html</id><summary type="html">&lt;p&gt;What’s the best career advice you’ve ever had?&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="cartoon of someone walking the career path" src="http://peetronics.com/images/grab-the-opportunity.png" width="80%"&gt;&lt;/p&gt;
+&lt;h1&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;For the last few weeks I have been pondering over &lt;a href="https://club.ministryoftesting.com/t/bloggers-club-september-october-2020-what-s-the-best-career-advice-you-ve-ever-had"&gt;this month's topic of the Ministry of Testing blogging club (&lt;em&gt;What’s the best career advice you’ve ever had?&lt;/em&gt;)&lt;/a&gt;, and wondering if I can write something meaningful about that.&lt;br&gt;
+It was only after I went to bed one night and I couldn't immediately catch sleep, that it suddenly dawned on me the best advice I got was when I was still studying.&lt;br&gt;
+One lecturer (can't remember who) of my studies in The Netherlands gave this little piece of wisdom: &lt;strong&gt;grab the opportunity&lt;/strong&gt;.&lt;br&gt;
+Looking back at my career so far it has been the advice I have followed and lived by a lot; often more unknowingly than not...  &lt;/p&gt;
+&lt;h2&gt;Study&lt;/h2&gt;
+&lt;p&gt;As said, the advice to &lt;em&gt;to grab the opportunity&lt;/em&gt; was given by a lecturer while I was &lt;a href="https://www.avans.nl/opleidingen/opleidingzoeker/business-it--management-breda-voltijd-bachelor/introductie#"&gt;studying at the HEAO in Breda&lt;/a&gt;.
+But I can't remember who. There was another tutor however, called Ferrie Veen, and I always enjoyed his lectures. Probably because of his approach to teaching, which I really liked.&lt;br&gt;
+One of the assignments he gave us was to compare yourself with an object and use that in a job application letter. I wrote a whole letter around a paperclip; the gist of it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Uncomplicated&lt;/li&gt;
+&lt;li&gt;Being flexible&lt;/li&gt;
+&lt;li&gt;Versatile&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But more on that later...&lt;/p&gt;
+&lt;p&gt;The last part of the study was a student placement at a company for half a year, and work on a pre-defined practical assignment.
+That went quite successful for me and as a result I was offered a job at that company after my graduation.
+The first opportunity on my career path I grabbed. I landed a job without having to use my paperclip application letter, yet ...&lt;/p&gt;
+&lt;h2&gt;Applying for my first job&lt;/h2&gt;
+&lt;p&gt;Even before I started that job, the company went bust and I still had to go in search for a job. 
+Looking back I could have seen it coming, but I was young and a bit naive (lesson learned).  &lt;/p&gt;
+&lt;p&gt;Luck had it that, around the same time, a local bank where I lived was hiring for a role that matched my qualifications.
+I immediately grabbed the opportunity to go to that bank and asked for the manager who was hiring, so I could introduce myself.
+Of course I still had to write an official application, which I did. And yes, I did use the paperclip analogy.
+I did get the job and I worked there for 2 1/2 years.&lt;/p&gt;
+&lt;h2&gt;Moving town&lt;/h2&gt;
+&lt;p&gt;After my then partner graduated, she got a job at a tourist office, in a completely different part of the country. This meant We had to move and I had to look for a new job.
+Got rejected a few times on jobs I applied for locally, which was of course dissapointing.  &lt;/p&gt;
+&lt;p&gt;A friend of my kept telling about his work and that they were always looking for colleagues to join their team. But that was a 2 hour commute one way. 
+I still applied though and was offered a job. And by coincidence at the same time I got offered a job closer to home.
+After much deliberation I decided to take the offer further from home. Could have been interpreted as a stupid decision, but I never regretted it.
+In the 6 1/2 years I worked there I had many opportunities to:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on great projects for different clients in a wide variety of industries&lt;/li&gt;
+&lt;li&gt;Share knowledge with colleagues as a trainer&lt;/li&gt;
+&lt;li&gt;Get to know lots of people with whom some of them I am still in touch with&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Moving abroad&lt;/h2&gt;
+&lt;p&gt;After our first child was born, something had to change in my work situation. I was away still a lot for work. And as a result of that, I only saw my son during the week when he was asleep.
+Weighing the options, we decided to take the opportunity to settle ourselves abroad and start a Bed &amp;amp; Breakfast in Scotland. Something we often talked about.
+As financial support it was wise to still have a steady income, so I went in search for a job. I had the luck that a software company in Aberdeen was hiring for a role that suited me perfectly.
+I applied, had a telephone interview, flew out for a face to face interview, and soon after an offer was made. I willingly accepted, and so we packed our stuff and moved across the pond.  &lt;/p&gt;
+&lt;p&gt;In that company, I started as the first tester in a team of 12 developers. Over the years, I built up a structured testing discipline and culture. In the 12 years at that company I've grabbed many opportunities to grow mysself. 
+By the time I left that company, a team of 15 test engineers was in place which I was in charge of.  &lt;/p&gt;
+&lt;p&gt;Regarding my B&amp;amp;B adventures, I can tell many a story about that. But I will leave that for another day.&lt;/p&gt;
+&lt;h2&gt;Redundancy&lt;/h2&gt;
+&lt;p&gt;It was not my plan to leave the company yet, as there still were so much more opportunities to be grabbed.
+But beacause of a organisational restructure I was made redundant.  &lt;/p&gt;
+&lt;p&gt;I knew there weren't many job opportunities close by. So I had to look further afield for my next gig, and needed to be aware that it probably would take a bit longer to be back in fulltine work.
+Then, a week into me &lt;em&gt;sitting&lt;/em&gt; at home, a friend pointed out that a local whisky distillery was looking for a tour guide. Well, that was an opportunity I couldn't let pass.
+I showed my interest and soon I was showing tourists around &lt;a href="https://www.chivas.com/en-GB/visit-strathisla"&gt;Scotland's most beautiful distillery&lt;/a&gt;, while I still kept applying for jobs.  &lt;/p&gt;
+&lt;p&gt;Luckily it didn't take too long to be made a new offer for a job. But it meant I was working away from home again ...&lt;/p&gt;
+&lt;h2&gt;Current day&lt;/h2&gt;
+&lt;p&gt;Have been in my current job for almost 3 years now, and it already has given me lots of new opportunities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The opportunity to work on medical devices. Something I haven't done yet in my 20+ year career.&lt;/li&gt;
+&lt;li&gt;The opportunity to get my hands dirty again. Not being in a managerial role and doing actual testing.&lt;/li&gt;
+&lt;li&gt;The opportunity to work with hard- and software. A whole new dimension and things to take into consideration.&lt;/li&gt;
+&lt;li&gt;The opportunity to get into public speaking. A manager that encourages to submit papers for conferences.&lt;/li&gt;
+&lt;li&gt;The opportunity to get more involved with the testing community. A Ministry of Testing Meetup closer by.&lt;/li&gt;
+&lt;li&gt;The opportunity to make changes to the organisation. Bringing in 20+ years of experience.&lt;/li&gt;
+&lt;li&gt;The opportunity to build a Community of Practice. Finding likeminded colleagues.&lt;/li&gt;
+&lt;li&gt;... &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;In conclusion&lt;/h2&gt;
+&lt;p&gt;In your career, there are many things coming on your path you can't foresee, and not always have influence on.
+You can steer your career a lot yourself, but sometimes you need to look for opportunities, grab them, and help that get you further.  &lt;/p&gt;
+&lt;p&gt;lets see what's the next opportunity ...&lt;/p&gt;&lt;script src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;</content><category term="Blog"></category><category term="Testing"></category></entry><entry><title>GUI test automation for Windows desktop</title><link href="http://peetronics.com/GUITestAutomationForWindowsDesktop.html" rel="alternate"></link><published>2020-09-15T21:00:00+01:00</published><updated>2020-09-15T21:00:00+01:00</updated><author><name>Peet Michielsen</name></author><id>tag:peetronics.com,2020-09-15:/GUITestAutomationForWindowsDesktop.html</id><summary type="html">&lt;p&gt;A collection of resources to be used for Windows desktop test automation, and things to consider in choosing your tooling&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Screenshot of a windows 3.1 desktop" src="http://peetronics.com/images/windows-desktop.png" width="80%"&gt;&lt;/p&gt;
 &lt;h1&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;If you look at conference talk and workshop topics, (online) articles, tutorials, and courses, you could get the impression that most software testing revolves around &lt;strong&gt;web&lt;/strong&gt; and &lt;strong&gt;mobile&lt;/strong&gt;. 
 &lt;a href="https://www.practitest.com/resource/state-of-testing-report-2020/"&gt;The 2020 state of testing report&lt;/a&gt;, curated and published by Practitest, underwrites that. Web and mobile have got the biggest share of the technologies being tested (75% and 59% respectively). 
