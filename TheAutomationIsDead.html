@@ -8,13 +8,13 @@
     <meta name="author" content="Peet Michielsen" />
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="What I Have Learned Today - #018"/>
-    <meta property="og:url" content="http://peetronics.com/WhatIHaveLearnedToday-018.html"/>
+    <meta property="og:title" content="The automation is dead; long live the automation!"/>
+    <meta property="og:url" content="http://peetronics.com/TheAutomationIsDead.html"/>
       <meta property="article:section" content="Blog"/>
-        <meta property="article:tag" content="Python"/>
-        <meta property="article:tag" content="What I Have Learned Today"/>
+        <meta property="article:tag" content="Automation"/>
+        <meta property="article:tag" content="Ministry Of Testing"/>
 
-    <title>What I Have Learned Today - #018 - PeetRonics' blog</title>
+    <title>The automation is dead; long live the automation! - PeetRonics' blog</title>
 
    
         <link rel="stylesheet"
@@ -96,12 +96,12 @@
 <article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
   <header class="article-header">
 <abbr class="article-header-date">
-    Fri 22 November 2019 -
-        read time: 1 min.
+    Sat 27 February 2021 -
+        read time: 4 min.
 </abbr><h1>
-  <a href="http://peetronics.com/WhatIHaveLearnedToday-018.html" rel="bookmark"
-     title="Permalink to What I Have Learned Today - #018">
-    What I Have Learned Today - #018
+  <a href="http://peetronics.com/TheAutomationIsDead.html" rel="bookmark"
+     title="Permalink to The automation is dead; long live the automation!">
+    The automation is dead; long live the automation!
   </a>
 </h1><div class="article-header-info">
   <p>
@@ -112,23 +112,40 @@
 <!--    <a href="http://peetronics.com/category/blog.html">-->
 <!--      Blog</a>-->
 <!--    -->
-<!--        Approx. read time: 1 min.-->
+<!--        Approx. read time: 4 min.-->
 <!--    -->
     &nbsp;&nbsp;
   </p>
 </div> <!-- /.article-header-info -->  </header>
   <div class="content-body" itemprop="text articleBody">
-	<p><img alt="removestar page header" src="http://peetronics.com/images/removestar.png" width="80%">  </p>
-<h1>Good coding practices</h1>
-<p>I’m a strong believer of using good coding practices and will advocate for it wherever and whenever I can. Be it in <em>code reviews</em>, <em>community of practice</em> sessions, <em>mentoring</em> etc.  </p>
-<p>It is commonly known in Python not to use <code>import *</code>. If you want to know why, read <a href="https://www.geeksforgeeks.org/why-import-star-in-python-is-a-bad-idea/">this</a>. It makes me flinch every time I see the usage of that in Python code I lay my eyes on.  </p>
-<h1>RemoveStar</h1>
-<p>What’s out there in Python-land keeps amazing me. Today I <strong>learned</strong> about a Python module called <a href="https://www.asmeurer.com/removestar/">RemoveStar</a>. It scans a file, directory or module, and points out usages of <code>import *</code>. Or of you like, it will auto replace with proper imports.  </p>
-<h1>Who knew</h1>
-<p>Luckily all usages of <code>import *</code> have been eradicated in our code bases; or so I thought…  </p>
-<p>I tried the <em>RemoveStar</em> tool on one of our repositories. Lo and behold, 3 instances of <code>import *</code> where found. For now, rather than refactoring the code, I will have a chat with the team what I found.  </p>
-<p>Have a good weekend!  </p>
-<p><em>This post is part of a series of articles about “What I Have Learned Today”; acknowledging every day the thing I have learned. Feel free to read the other posts. all opinions in this article are my own and not necessarily represent the views of my employer.</em></p><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<p><img alt="drawing of a robot behind a computer" src="http://peetronics.com/images/automation.jpg" width="80%"></p>
+<p><strong><em>I'm not the best coder in the world… Let’s face it, I'm not even the best coder in my team</em></strong> (making a liberal interpretation of <a href="https://www.radiox.co.uk/artists/beatles/did-john-lennon-say-ringo-wasnt-even-best-drummer/">the Ringo Starr joke</a>). 
+I'm well aware of that, and am absolutely fine with it. Just putting this <em>confession</em> out here to set the scene for this article.<br>
+For almost 25 years now I've been working with (test) automation, and during that time <a href="https://club.ministryoftesting.com/t/bloggers-club-february-2021-your-struggles-successes-with-automation/46900">I've had many struggles and successes with it</a>. Let me reflect on it.  </p>
+<h2>What "automation" means to me</h2>
+<p>For me automation is so much more than using a tool for automated test case execution; I'm probably not the only one in the software testing profession with a similar view.<br>
+Anything you can let a computer do to help you with your work I consider that as automation. For example in my first job at a bank, I wrote MS Excel formulas and macros to crunch- and process data; that's automation for me.
+Using keyboard shortcuts for commonly used tasks (launching apps, advanced copy / paste, ...), <a href="http://peetronics.com/WhatIHaveLearnedToday-005.html">enhanced custom searches in the browser bar</a>; that's automation for me.
+Using scripts to do various things (creating bug reports, produce verification reports, download YouTube clips and save as MP3); you guessed it, that's automation for me.<br>
+Talking about automation here is in the broadest sense of the word.  </p>
+<h2>The struggles</h2>
+<p>As said, I don't consider myself a good coder, even though I've been doing it for over 35 years now (first as a hobby on an <a href="https://en.wikipedia.org/wiki/Acorn_Electron">Acorn Electron</a>). Here are some of my automation struggles:  </p>
+<ul>
+<li>Still I don't completely grasp the concept of <strong>object-oriented programming</strong>. Looking at all the code I've written over the years, a lot of it could have benefitted from an object oriented approach. Having that nagging feeling of <em>"this piece of code can be written much more effectively"</em>.  </li>
+<li>More often than not I have to <strong>Google</strong> for coding solutions. Almost feel a bit ashamed by that, feeling I'm wasting my valuable time. Functions I have used numerous times, I still looking it up on how the exact implementation is.  </li>
+<li>At the moment I have a preference for Python as a programming- / scripting language, but am happy to code in any other language,.... part from <strong>JavaScript and C</strong> (and all its variants). Don't know what it is with that, if I can I will avoid it.  </li>
+<li>And then there is my urge to <strong>refactor</strong>. In itself a very essential and important part of coding, but must admit I sometimes take it to the extreme. Meaning I spend more time on it than I should, and leaving a piece of automation in an unusable state for too long. At least I hope the technical debt is kept to manageable levels.  </li>
+</ul>
+<h2>The successes</h2>
+<p>Luckily it is not all bad news. If it was, I would have given up on automation a long time ago. And it is successes like the following that gives me joy, and wants me to keep going with it:  </p>
+<ul>
+<li>What I like about the team of people I work with today, is the <strong>collaboration</strong> on our test automation suite. In my career I've set up numerous amounts of automation frameworks, often on my own. Now I'm part of a team where people's good ideas on automation has come together. This has resulted in a very robust framework, which forms an integral part of our delivery pipeline.  </li>
+<li>I love it when I can use my coding skills to knock up something <strong>quick and dirty</strong> to solve a problem. Be it using the API of a tool to extract or inject data, parsing a log file and plot performance metrics from it, write a wrapper around another piece of automation to make it more accessible. Not only is it handy for yourself, you can be of service to your colleagues.  </li>
+<li>I'm a <strong>curious</strong> person. In relation to automation this means that I want to know about new tools, libraries, techniques, and how they potentially can be used in my work. Which has resulted in me setting up proof of concepts, that got later adopted by the team / project / company.  </li>
+<li>Yes, <strong>refactoring</strong> can be a struggle, but also is a mechanism to create success. It's great to see that as a result of refactoring, a codebase becomes better maintainable and easier accessible. That will always be a big win for me.  </li>
+</ul>
+<h2>To reflect</h2>
+<p>Despite all the struggles, I will never give up on automation. The fun I have with it, and the successes I've achieved with it, far outweigh all the negative stuff around it. Working with automation gives me job satisfaction, but more importantly, with it I can add value. Despite I sometimes (have to) walk away from it, automation will always lure me back; <em>The automation is dead, long live the automation!</em>   </p><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
   
 
