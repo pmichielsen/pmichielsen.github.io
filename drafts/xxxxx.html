@@ -122,68 +122,68 @@
   <div class="content-body" itemprop="text articleBody">
 	<h1>Our implementation</h1>
 <p><img alt="Diagram of a test automation implementation" src="http://peetronics.com/images/winAutomation-structure.png" width="80%"></p>
-<div class="highlight"><pre><span></span><code><span class="err">winAutomation/</span>
-<span class="err">├── products/</span>
-<span class="err">│   ├── common/</span>
-<span class="err">│   │   ├── actions/</span>
-<span class="err">│   │   │   ├── generic.py</span>
-<span class="err">│   │   │   └── server_interactions.py</span>
-<span class="err">│   │   └── resources/</span>
-<span class="err">│   │       └── keyboardDefault.py</span>
-<span class="err">│   ├── productA/</span>
-<span class="err">│   │   ├── actions/</span>
-<span class="err">│   │   │   ├── generic.py</span>
-<span class="err">│   │   │   ├── screenA.py</span>
-<span class="err">│   │   │   ├── screenB.py</span>
-<span class="err">│   │   │   └── screenC.py</span>
-<span class="err">│   │   ├── environment.py</span>
-<span class="err">│   │   ├── features/</span>
-<span class="err">│   │   │   ├── behave.ini</span>
-<span class="err">│   │   │   ├── test1.feature</span>
-<span class="err">│   │   │   └── test2.feature</span>
-<span class="err">│   │   ├── resources/</span>
-<span class="err">│   │   │   ├── config-default.xml</span>
-<span class="err">│   │   │   ├── createUsersForLoginTesting.cmd</span>
-<span class="err">│   │   │   └── log_lines.xml</span>
-<span class="err">│   │   ├── scripts/</span>
-<span class="err">│   │   │   ├── script1.py</span>
-<span class="err">│   │   │   └── script2.py</span>
-<span class="err">│   │   └── steps/</span>
-<span class="err">│   │       ├── stepFileA.py</span>
-<span class="err">│   │       ├── stepFileB.py</span>
-<span class="err">│   │       └── stepFileC.py</span>
-<span class="err">│   └── productB/</span>
-<span class="err">│       ├── actions/</span>
-<span class="err">│       │   ├── generic.py</span>
-<span class="err">│       │   ├── screenA.py</span>
-<span class="err">│       │   ├── screenB.py</span>
-<span class="err">│       │   └── screenC.py</span>
-<span class="err">│       ├── environment.py</span>
-<span class="err">│       ├── features/</span>
-<span class="err">│       │   ├── behave.ini</span>
-<span class="err">│       │   ├── test1.feature</span>
-<span class="err">│       │   └── test2.feature</span>
-<span class="err">│       ├── resources/</span>
-<span class="err">│       │   ├── config-default.xml</span>
-<span class="err">│       │   ├── createUsersForLoginTesting.cmd</span>
-<span class="err">│       │   └── log_lines.xml</span>
-<span class="err">│       ├── scripts/</span>
-<span class="err">│       │   ├── script1.py</span>
-<span class="err">│       │   └── script2.py</span>
-<span class="err">│       └── steps/</span>
-<span class="err">│           ├── stepFileA.py</span>
-<span class="err">│           ├── stepFileB.py</span>
-<span class="err">│           └── stepFileC.py</span>
-<span class="err">├── pyWinAutoWrapper/</span>
-<span class="err">│   └── pyWinAutoWrapper.py</span>
-<span class="err">├── pyWinServer/</span>
-<span class="err">│   └── pyWinServer.py</span>
-<span class="err">├── readMe.md</span>
-<span class="err">└── tools/</span>
-<span class="err">    ├── changeConfig.py</span>
-<span class="err">    ├── getSystemInformation.py</span>
-<span class="err">    ├── installProduct.py</span>
-<span class="err">    └── logging.py</span>
+<div class="highlight"><pre><span></span><code><span class="n">winAutomation</span><span class="o">/</span>
+<span class="err">├──</span> <span class="n">products</span><span class="o">/</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">common</span><span class="o">/</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">├──</span> <span class="n">actions</span><span class="o">/</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">├──</span> <span class="n">generic</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">└──</span> <span class="n">server_interactions</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">└──</span> <span class="n">resources</span><span class="o">/</span>
+<span class="err">│</span>   <span class="err">│</span>       <span class="err">└──</span> <span class="n">keyboardDefault</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>   <span class="err">├──</span> <span class="n">productA</span><span class="o">/</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">├──</span> <span class="n">actions</span><span class="o">/</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">├──</span> <span class="n">generic</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">├──</span> <span class="n">screenA</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">├──</span> <span class="n">screenB</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">└──</span> <span class="n">screenC</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">├──</span> <span class="n">environment</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">├──</span> <span class="n">features</span><span class="o">/</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">├──</span> <span class="n">behave</span><span class="o">.</span><span class="n">ini</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">├──</span> <span class="n">test1</span><span class="o">.</span><span class="n">feature</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">└──</span> <span class="n">test2</span><span class="o">.</span><span class="n">feature</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">├──</span> <span class="n">resources</span><span class="o">/</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">├──</span> <span class="n">config</span><span class="o">-</span><span class="n">default</span><span class="o">.</span><span class="n">xml</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">├──</span> <span class="n">createUsersForLoginTesting</span><span class="o">.</span><span class="n">cmd</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">└──</span> <span class="n">log_lines</span><span class="o">.</span><span class="n">xml</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">├──</span> <span class="n">scripts</span><span class="o">/</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">├──</span> <span class="n">script1</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">│</span>   <span class="err">└──</span> <span class="n">script2</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>   <span class="err">│</span>   <span class="err">└──</span> <span class="n">steps</span><span class="o">/</span>
+<span class="err">│</span>   <span class="err">│</span>       <span class="err">├──</span> <span class="n">stepFileA</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>   <span class="err">│</span>       <span class="err">├──</span> <span class="n">stepFileB</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>   <span class="err">│</span>       <span class="err">└──</span> <span class="n">stepFileC</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">productB</span><span class="o">/</span>
+<span class="err">│</span>       <span class="err">├──</span> <span class="n">actions</span><span class="o">/</span>
+<span class="err">│</span>       <span class="err">│</span>   <span class="err">├──</span> <span class="n">generic</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>       <span class="err">│</span>   <span class="err">├──</span> <span class="n">screenA</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>       <span class="err">│</span>   <span class="err">├──</span> <span class="n">screenB</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>       <span class="err">│</span>   <span class="err">└──</span> <span class="n">screenC</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>       <span class="err">├──</span> <span class="n">environment</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>       <span class="err">├──</span> <span class="n">features</span><span class="o">/</span>
+<span class="err">│</span>       <span class="err">│</span>   <span class="err">├──</span> <span class="n">behave</span><span class="o">.</span><span class="n">ini</span>
+<span class="err">│</span>       <span class="err">│</span>   <span class="err">├──</span> <span class="n">test1</span><span class="o">.</span><span class="n">feature</span>
+<span class="err">│</span>       <span class="err">│</span>   <span class="err">└──</span> <span class="n">test2</span><span class="o">.</span><span class="n">feature</span>
+<span class="err">│</span>       <span class="err">├──</span> <span class="n">resources</span><span class="o">/</span>
+<span class="err">│</span>       <span class="err">│</span>   <span class="err">├──</span> <span class="n">config</span><span class="o">-</span><span class="n">default</span><span class="o">.</span><span class="n">xml</span>
+<span class="err">│</span>       <span class="err">│</span>   <span class="err">├──</span> <span class="n">createUsersForLoginTesting</span><span class="o">.</span><span class="n">cmd</span>
+<span class="err">│</span>       <span class="err">│</span>   <span class="err">└──</span> <span class="n">log_lines</span><span class="o">.</span><span class="n">xml</span>
+<span class="err">│</span>       <span class="err">├──</span> <span class="n">scripts</span><span class="o">/</span>
+<span class="err">│</span>       <span class="err">│</span>   <span class="err">├──</span> <span class="n">script1</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>       <span class="err">│</span>   <span class="err">└──</span> <span class="n">script2</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>       <span class="err">└──</span> <span class="n">steps</span><span class="o">/</span>
+<span class="err">│</span>           <span class="err">├──</span> <span class="n">stepFileA</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>           <span class="err">├──</span> <span class="n">stepFileB</span><span class="o">.</span><span class="n">py</span>
+<span class="err">│</span>           <span class="err">└──</span> <span class="n">stepFileC</span><span class="o">.</span><span class="n">py</span>
+<span class="err">├──</span> <span class="n">pyWinAutoWrapper</span><span class="o">/</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">pyWinAutoWrapper</span><span class="o">.</span><span class="n">py</span>
+<span class="err">├──</span> <span class="n">pyWinServer</span><span class="o">/</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="n">pyWinServer</span><span class="o">.</span><span class="n">py</span>
+<span class="err">├──</span> <span class="n">readMe</span><span class="o">.</span><span class="n">md</span>
+<span class="err">└──</span> <span class="n">tools</span><span class="o">/</span>
+    <span class="err">├──</span> <span class="n">changeConfig</span><span class="o">.</span><span class="n">py</span>
+    <span class="err">├──</span> <span class="n">getSystemInformation</span><span class="o">.</span><span class="n">py</span>
+    <span class="err">├──</span> <span class="n">installProduct</span><span class="o">.</span><span class="n">py</span>
+    <span class="err">└──</span> <span class="n">logging</span><span class="o">.</span><span class="n">py</span>
 </code></pre></div><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
   
@@ -225,17 +225,17 @@
 
 <h4><i class="fas fa-tags fa-fw fa-lg"></i> Tags</h4>
 <p class="tag-cloud">
+      <a href="http://peetronics.com/tag/testing.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Testing
+      </a>
+      <a href="http://peetronics.com/tag/ministry-of-testing.html">
+        <i class="fas fa-tag fa-fw fa-lg"></i>Ministry of Testing
+      </a>
       <a href="http://peetronics.com/tag/automation.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Automation
       </a>
-      <a href="http://peetronics.com/tag/ministry-of-testing.html">
-        <i class="fas fa-tag fa-fw fa-lg"></i>Ministry Of Testing
-      </a>
       <a href="http://peetronics.com/tag/career.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Career
-      </a>
-      <a href="http://peetronics.com/tag/testing.html">
-        <i class="fas fa-tag fa-fw fa-lg"></i>Testing
       </a>
       <a href="http://peetronics.com/tag/test-automation.html">
         <i class="fas fa-tag fa-fw fa-lg"></i>Test automation

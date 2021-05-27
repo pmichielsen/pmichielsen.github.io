@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PeetRonics' blog - Testing</title><link href="http://peetronics.com/" rel="alternate"></link><link href="http://peetronics.com/feeds/testing.xml" rel="self"></link><id>http://peetronics.com/</id><updated>2020-09-15T21:00:00+01:00</updated><subtitle>All can be true!</subtitle><entry><title>GUI test automation for Windows desktop</title><link href="http://peetronics.com/GUITestAutomationForWindowsDesktop.html" rel="alternate"></link><published>2020-09-15T21:00:00+01:00</published><updated>2020-09-15T21:00:00+01:00</updated><author><name>Peet Michielsen</name></author><id>tag:peetronics.com,2020-09-15:/GUITestAutomationForWindowsDesktop.html</id><summary type="html">&lt;p&gt;A collection of resources to be used for Windows desktop test automation, and things to consider in choosing your tooling&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Screenshot of a windows 3.1 desktop" src="http://peetronics.com/images/windows-desktop.png" width="80%"&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PeetRonics' blog - Testing</title><link href="http://peetronics.com/" rel="alternate"></link><link href="http://peetronics.com/feeds/testing.xml" rel="self"></link><id>http://peetronics.com/</id><updated>2021-05-27T16:00:00+01:00</updated><subtitle>All can be true!</subtitle><entry><title>The 'joy' of finding bugs</title><link href="http://peetronics.com/TheJoyOfFindingBugs.html" rel="alternate"></link><published>2021-05-27T16:00:00+01:00</published><updated>2021-05-27T16:00:00+01:00</updated><author><name>Peet Michielsen</name></author><id>tag:peetronics.com,2021-05-27:/TheJoyOfFindingBugs.html</id><summary type="html">&lt;p&gt;Why do testers 'enjoy' finding bugs, or do they?&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="drawing of an entomologist capturing a butterfly with a net" src="http://peetronics.com/images/Joy_of_finding_bugs.jpg" width="80%"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;"Testers like to find bugs"&lt;/em&gt;. In that respect it sounds we've got a lot in common with entomologists.&lt;br&gt;
+The remit of a tester goes way beyond finding and studying bugs. One of which is &lt;em&gt;preventing&lt;/em&gt; bugs. That probably might be one of the remits of an entomologist too? 
+something to ponder over another time...  &lt;/p&gt;
+&lt;h2&gt;&lt;a href="https://club.ministryoftesting.com/t/bloggers-club-may-2021-fun-with-bugs/49996"&gt;Fun with bugs&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;"Testers like to find bugs"&lt;/em&gt;; or do they ... ?&lt;br&gt;
+What is the &lt;strong&gt;fun&lt;/strong&gt; of finding bugs? I've often asked myself that question. Pointing out to others the things that are not right. Always being the one in the team to draw the attention away from the good areas of a system or piece of software.  &lt;/p&gt;
+&lt;p&gt;Well, that's one way of looking at it. Instead we could approach it from a different angle. Finding bugs should be a rewarding thing:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It helps improving the quality of the product  &lt;/li&gt;
+&lt;li&gt;It helps saving money by limiting the amount of bugs to be fixed in production  &lt;/li&gt;
+&lt;li&gt;It helps your team to avoid introducing bugs  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, if "&lt;em&gt;finding bugs is fun&lt;/em&gt;", We then can imply that "&lt;em&gt;not finding bugs is not fun&lt;/em&gt;" (appologies for the double negative).&lt;br&gt;
+There must be some truth in that. Imagine if you're hired as a QA, and you don't find any bugs, that must be quite demoralising. Various emotions and reactions that can come into play:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Self doubt&lt;/em&gt; - "Am I doing my job good enough?"  &lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Superfluous&lt;/em&gt; - "The quality of this product seems so good, I'm not needed here."  &lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Wasting time&lt;/em&gt; - "I put in all this effort with no tangible result."  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Therefore, to get some job satisfaction, one must find bugs, right? And the more bugs you find, the more gratification you get as a reward? To a certain extent, definitely. But what if you find too many bugs? So many, that you get serious doubts about the level of expertise of your team members. Also that can be demoralising&lt;/p&gt;
+&lt;h2&gt;Tester's satisfaction curve&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Graph of the tester's satisfaction curve" src="http://peetronics.com/images/tester_satisfaction_curve.jpg" width="80%"&gt;  &lt;/p&gt;
+&lt;p&gt;And with that I present to you the &lt;strong&gt;&lt;em&gt;Tester's Satisfaction Curve&lt;/em&gt;&lt;/strong&gt;. This is not something I came up with. A good couple of years ago someone showed this to me, and it stuck, part from the source. If someone knows, please ping me, so I can do the author justice.    &lt;/p&gt;
+&lt;p&gt;A tester's job satisfaction can be correlated to the amount of bugs it finds.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A low number of bugs results in a low satisfaction &lt;/li&gt;
+&lt;li&gt;With the number of bugs found increasing, so also does the tester's job satisfaction  &lt;/li&gt;
+&lt;li&gt;The satisfaction increase slows down with even more bugs found, till it reaches an optimum &lt;/li&gt;
+&lt;li&gt;Then the gratification starts to drop with every additional bug found  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This resonates with me, and have felt this in numerous situation throughout the years. Is this something you can relate to? Let me know (&lt;a href="https://twitter.com/peetronics"&gt;@peetronics&lt;/a&gt;).  &lt;/p&gt;
+&lt;p&gt;Have joy finding bugs, but with moderation ... &lt;/p&gt;&lt;script src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;</content><category term="Blog"></category><category term="Testing"></category><category term="Ministry of Testing"></category></entry><entry><title>GUI test automation for Windows desktop</title><link href="http://peetronics.com/GUITestAutomationForWindowsDesktop.html" rel="alternate"></link><published>2020-09-15T21:00:00+01:00</published><updated>2020-09-15T21:00:00+01:00</updated><author><name>Peet Michielsen</name></author><id>tag:peetronics.com,2020-09-15:/GUITestAutomationForWindowsDesktop.html</id><summary type="html">&lt;p&gt;A collection of resources to be used for Windows desktop test automation, and things to consider in choosing your tooling&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Screenshot of a windows 3.1 desktop" src="http://peetronics.com/images/windows-desktop.png" width="80%"&gt;&lt;/p&gt;
 &lt;h1&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;If you look at conference talk and workshop topics, (online) articles, tutorials, and courses, you could get the impression that most software testing revolves around &lt;strong&gt;web&lt;/strong&gt; and &lt;strong&gt;mobile&lt;/strong&gt;. 
 &lt;a href="https://www.practitest.com/resource/state-of-testing-report-2020/"&gt;The 2020 state of testing report&lt;/a&gt;, curated and published by Practitest, underwrites that. Web and mobile have got the biggest share of the technologies being tested (75% and 59% respectively). 

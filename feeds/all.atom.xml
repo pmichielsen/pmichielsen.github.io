@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PeetRonics' blog</title><link href="http://peetronics.com/" rel="alternate"></link><link href="http://peetronics.com/feeds/all.atom.xml" rel="self"></link><id>http://peetronics.com/</id><updated>2021-02-27T12:00:00+00:00</updated><subtitle>All can be true!</subtitle><entry><title>The automation is dead; long live the automation!</title><link href="http://peetronics.com/TheAutomationIsDead.html" rel="alternate"></link><published>2021-02-27T12:00:00+00:00</published><updated>2021-02-27T12:00:00+00:00</updated><author><name>Peet Michielsen</name></author><id>tag:peetronics.com,2021-02-27:/TheAutomationIsDead.html</id><summary type="html">&lt;p&gt;A reflection on almost 25 years of working with (test-) automation&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="drawing of a robot behind a computer" src="http://peetronics.com/images/automation.jpg" width="80%"&gt;&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PeetRonics' blog</title><link href="http://peetronics.com/" rel="alternate"></link><link href="http://peetronics.com/feeds/all.atom.xml" rel="self"></link><id>http://peetronics.com/</id><updated>2021-05-27T16:00:00+01:00</updated><subtitle>All can be true!</subtitle><entry><title>The 'joy' of finding bugs</title><link href="http://peetronics.com/TheJoyOfFindingBugs.html" rel="alternate"></link><published>2021-05-27T16:00:00+01:00</published><updated>2021-05-27T16:00:00+01:00</updated><author><name>Peet Michielsen</name></author><id>tag:peetronics.com,2021-05-27:/TheJoyOfFindingBugs.html</id><summary type="html">&lt;p&gt;Why do testers 'enjoy' finding bugs, or do they?&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="drawing of an entomologist capturing a butterfly with a net" src="http://peetronics.com/images/Joy_of_finding_bugs.jpg" width="80%"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;"Testers like to find bugs"&lt;/em&gt;. In that respect it sounds we've got a lot in common with entomologists.&lt;br&gt;
+The remit of a tester goes way beyond finding and studying bugs. One of which is &lt;em&gt;preventing&lt;/em&gt; bugs. That probably might be one of the remits of an entomologist too? 
+something to ponder over another time...  &lt;/p&gt;
+&lt;h2&gt;&lt;a href="https://club.ministryoftesting.com/t/bloggers-club-may-2021-fun-with-bugs/49996"&gt;Fun with bugs&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;"Testers like to find bugs"&lt;/em&gt;; or do they ... ?&lt;br&gt;
+What is the &lt;strong&gt;fun&lt;/strong&gt; of finding bugs? I've often asked myself that question. Pointing out to others the things that are not right. Always being the one in the team to draw the attention away from the good areas of a system or piece of software.  &lt;/p&gt;
+&lt;p&gt;Well, that's one way of looking at it. Instead we could approach it from a different angle. Finding bugs should be a rewarding thing:  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It helps improving the quality of the product  &lt;/li&gt;
+&lt;li&gt;It helps saving money by limiting the amount of bugs to be fixed in production  &lt;/li&gt;
+&lt;li&gt;It helps your team to avoid introducing bugs  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, if "&lt;em&gt;finding bugs is fun&lt;/em&gt;", We then can imply that "&lt;em&gt;not finding bugs is not fun&lt;/em&gt;" (appologies for the double negative).&lt;br&gt;
+There must be some truth in that. Imagine if you're hired as a QA, and you don't find any bugs, that must be quite demoralising. Various emotions and reactions that can come into play:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Self doubt&lt;/em&gt; - "Am I doing my job good enough?"  &lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Superfluous&lt;/em&gt; - "The quality of this product seems so good, I'm not needed here."  &lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Wasting time&lt;/em&gt; - "I put in all this effort with no tangible result."  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Therefore, to get some job satisfaction, one must find bugs, right? And the more bugs you find, the more gratification you get as a reward? To a certain extent, definitely. But what if you find too many bugs? So many, that you get serious doubts about the level of expertise of your team members. Also that can be demoralising&lt;/p&gt;
+&lt;h2&gt;Tester's satisfaction curve&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Graph of the tester's satisfaction curve" src="http://peetronics.com/images/tester_satisfaction_curve.jpg" width="80%"&gt;  &lt;/p&gt;
+&lt;p&gt;And with that I present to you the &lt;strong&gt;&lt;em&gt;Tester's Satisfaction Curve&lt;/em&gt;&lt;/strong&gt;. This is not something I came up with. A good couple of years ago someone showed this to me, and it stuck, part from the source. If someone knows, please ping me, so I can do the author justice.    &lt;/p&gt;
+&lt;p&gt;A tester's job satisfaction can be correlated to the amount of bugs it finds.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A low number of bugs results in a low satisfaction &lt;/li&gt;
+&lt;li&gt;With the number of bugs found increasing, so also does the tester's job satisfaction  &lt;/li&gt;
+&lt;li&gt;The satisfaction increase slows down with even more bugs found, till it reaches an optimum &lt;/li&gt;
+&lt;li&gt;Then the gratification starts to drop with every additional bug found  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This resonates with me, and have felt this in numerous situation throughout the years. Is this something you can relate to? Let me know (&lt;a href="https://twitter.com/peetronics"&gt;@peetronics&lt;/a&gt;).  &lt;/p&gt;
+&lt;p&gt;Have joy finding bugs, but with moderation ... &lt;/p&gt;&lt;script src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;</content><category term="Blog"></category><category term="Testing"></category><category term="Ministry of Testing"></category></entry><entry><title>The automation is dead; long live the automation!</title><link href="http://peetronics.com/TheAutomationIsDead.html" rel="alternate"></link><published>2021-02-27T12:00:00+00:00</published><updated>2021-02-27T12:00:00+00:00</updated><author><name>Peet Michielsen</name></author><id>tag:peetronics.com,2021-02-27:/TheAutomationIsDead.html</id><summary type="html">&lt;p&gt;A reflection on almost 25 years of working with (test-) automation&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="drawing of a robot behind a computer" src="http://peetronics.com/images/automation.jpg" width="80%"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;I'm not the best coder in the world… Let’s face it, I'm not even the best coder in my team&lt;/em&gt;&lt;/strong&gt; (making a liberal interpretation of &lt;a href="https://www.radiox.co.uk/artists/beatles/did-john-lennon-say-ringo-wasnt-even-best-drummer/"&gt;the Ringo Starr joke&lt;/a&gt;). 
 I'm well aware of that, and am absolutely fine with it. Just putting this &lt;em&gt;confession&lt;/em&gt; out here to set the scene for this article.&lt;br&gt;
 For almost 25 years now I've been working with (test) automation, and during that time &lt;a href="https://club.ministryoftesting.com/t/bloggers-club-february-2021-your-struggles-successes-with-automation/46900"&gt;I've had many struggles and successes with it&lt;/a&gt;. Let me reflect on it.  &lt;/p&gt;
@@ -372,7 +404,6 @@ As soon as you think or say "&lt;em&gt;I wish I knew more about ...&lt;/em&gt;",
 &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;eric_idle&amp;quot;&lt;/span&gt; &lt;span class="n"&gt;member_since&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;datetime&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;date&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1975&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;31&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
 &lt;p&gt;That’s a nice addition.  &lt;/p&gt;
 &lt;h1&gt;A better alternative&lt;/h1&gt;
 &lt;p&gt;At my work I’m not making a secret of my approach to debugging and a colleague once pointed out the debug capabilities of the &lt;a href="https://www.jetbrains.com/pycharm/"&gt;IDE&lt;/a&gt;. Tried that but never caught on with me. So yes, I still have the ubiquitous print statements everywhere, which I always forget to remove.  &lt;/p&gt;
@@ -414,7 +445,6 @@ As soon as you think or say "&lt;em&gt;I wish I knew more about ...&lt;/em&gt;",
    &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
  &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
 
 &lt;p&gt;&lt;em&gt;This post is part of a series of articles about “What I Have Learned Today”; acknowledging every day the thing I have learned. Feel free to read the other posts. all opinions in this article are my own and not necessarily represent the views of my employer.&lt;/em&gt;&lt;/p&gt;&lt;script src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;</content><category term="Blog"></category><category term="Productivity"></category><category term="What I Have Learned Today"></category></entry><entry><title>What I Have Learned Today - #014</title><link href="http://peetronics.com/WhatIHaveLearnedToday-014.html" rel="alternate"></link><published>2019-11-18T21:00:00+00:00</published><updated>2019-11-18T21:00:00+00:00</updated><author><name>Peet Michielsen</name></author><id>tag:peetronics.com,2019-11-18:/WhatIHaveLearnedToday-014.html</id><summary type="html">&lt;p&gt;“I see some Python code and want to paint it Black”&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="Black logo" src="http://peetronics.com/images/black.png" width="80%"&gt;  &lt;/p&gt;
 &lt;h1&gt;Podcasts to stay up-to-date&lt;/h1&gt;
@@ -465,7 +495,6 @@ I did a code refactor &lt;a href="http://peetronics.com/WhatIHaveLearnedToday-00
 &lt;span class="c1"&gt;# &amp;gt;&amp;gt;&amp;gt; C:\git_repos\01_Private_Projects\Python_snippets\output&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
 &lt;p&gt;Currently I’m going through our codebase and see where we can replace hard coded paths with the &lt;code&gt;os.path.realpath&lt;/code&gt; function. Neat! Full documentation on this function and the whole &lt;code&gt;os.path&lt;/code&gt; module can be found &lt;a href="https://docs.python.org/3/library/os.path.html"&gt;here&lt;/a&gt;.  &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Bonus tip&lt;/strong&gt;: In the code snippet above you can see I only import &lt;code&gt;os.path&lt;/code&gt; and not the whole &lt;code&gt;os&lt;/code&gt; module. In Python is good practice only to import what you need. Import more can pollute the namespace and can cause confusion and conflicts. Never ever do &lt;code&gt;import * from blah&lt;/code&gt; !!!  &lt;/p&gt;
 &lt;h1&gt;Conclusion&lt;/h1&gt;
@@ -513,7 +542,6 @@ I did a code refactor &lt;a href="http://peetronics.com/WhatIHaveLearnedToday-00
 &lt;span class="n"&gt;context&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;configuration_file&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_user_data_value&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;user_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="err"&gt;“&lt;/span&gt;&lt;span class="n"&gt;CONFIGURATION_FILE&lt;/span&gt;&lt;span class="err"&gt;”&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;CONFIGURATION_FILE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;context&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dev_mode&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_user_data_value&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;user_data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="err"&gt;“&lt;/span&gt;&lt;span class="n"&gt;DEV_MODE&lt;/span&gt;&lt;span class="err"&gt;”&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;DEV_MODE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
 
 &lt;p&gt;&lt;em&gt;This post is part of a series of articles about “What I Have Learned Today”; acknowledging every day the thing I have learned. Feel free to read the other posts. all opinions in this article are my own and not necessarily represent the views of my employer.&lt;/em&gt;&lt;/p&gt;&lt;script src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;</content><category term="Blog"></category><category term="What I Have Learned Today"></category><category term="Python"></category></entry><entry><title>What I Have Learned Today - #007</title><link href="http://peetronics.com/WhatIHaveLearnedToday-007.html" rel="alternate"></link><published>2019-11-11T21:00:00+00:00</published><updated>2019-11-11T21:00:00+00:00</updated><author><name>Peet Michielsen</name></author><id>tag:peetronics.com,2019-11-11:/WhatIHaveLearnedToday-007.html</id><summary type="html">&lt;p&gt;How Much is 12,000 satellites?&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;img alt="3,600 dots representing the number of seconds in a hour" src="http://peetronics.com/images/seconds-in-an-hour.png"&gt;&lt;/p&gt;
 &lt;h1&gt;How Much is 12,000 satellites?&lt;/h1&gt;
@@ -610,7 +638,6 @@ I did a code refactor &lt;a href="http://peetronics.com/WhatIHaveLearnedToday-00
 &lt;span class="n"&gt;but&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;circumstances&lt;/span&gt; &lt;span class="n"&gt;require&lt;/span&gt; &lt;span class="n"&gt;I&lt;/span&gt; &lt;span class="n"&gt;can&lt;/span&gt; &lt;span class="n"&gt;be&lt;/span&gt; &lt;span class="n"&gt;flexible&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;adjust&lt;/span&gt; &lt;span class="n"&gt;accordingly&lt;/span&gt;&lt;span class="err"&gt;!&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
 &lt;p&gt;Surely the concept of having flexible principles can apply to the workplace as well. I’m definitely going to start using it.  &lt;/p&gt;
 &lt;p&gt;a word of two other words smashed is called a &lt;a href="https://en.wikipedia.org/wiki/Portmanteau"&gt;portmanteau&lt;/a&gt;. I do like a good portmanteau, and flinciple is a beautiful specimen. It conveys in a single word what otherwise would need two words. Portmanteaus are omnipresent in the English language and new ones appear constantly. Here are some examples:  &lt;/p&gt;
 &lt;ul&gt;
@@ -666,7 +693,6 @@ But I can imagine there are situations where it is not allowed to install additi
 &lt;span class="n"&gt;All&lt;/span&gt; &lt;span class="n"&gt;these&lt;/span&gt; &lt;span class="n"&gt;little&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;big&lt;/span&gt; &lt;span class="n"&gt;things&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="n"&gt;matter&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="err"&gt;“&lt;/span&gt;&lt;span class="n"&gt;learnings&lt;/span&gt;&lt;span class="err"&gt;”&lt;/span&gt; &lt;span class="n"&gt;will&lt;/span&gt; &lt;span class="n"&gt;make&lt;/span&gt; &lt;span class="n"&gt;you&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;better&lt;/span&gt; &lt;span class="n"&gt;tester&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-
 &lt;p&gt;Definitely give that link above a read. There is a lot to be learned from that thread :-).  &lt;/p&gt;
 &lt;h1&gt;More on learning&lt;/h1&gt;
 &lt;p&gt;Learning doesn’t have to be explicit and by doing the mental exercise of asking myself &lt;em&gt;what I have learned today&lt;/em&gt; I “force” myself to also recognise the implicit learning.  &lt;/p&gt;
@@ -676,7 +702,6 @@ But I can imagine there are situations where it is not allowed to install additi
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;Don&lt;/span&gt;&lt;span class="err"&gt;’&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="n"&gt;feel&lt;/span&gt; &lt;span class="n"&gt;guilty&lt;/span&gt; &lt;span class="n"&gt;about&lt;/span&gt; &lt;span class="n"&gt;how&lt;/span&gt; &lt;span class="n"&gt;you&lt;/span&gt; &lt;span class="n"&gt;want&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;learn&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
 &lt;span class="n"&gt;Just&lt;/span&gt; &lt;span class="n"&gt;learn&lt;/span&gt; &lt;span class="n"&gt;something&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;even&lt;/span&gt; &lt;span class="n"&gt;it&lt;/span&gt; &lt;span class="n"&gt;might&lt;/span&gt; &lt;span class="n"&gt;turn&lt;/span&gt; &lt;span class="n"&gt;out&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;be&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;wrong&lt;/span&gt; &lt;span class="n"&gt;thing&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="n"&gt;This&lt;/span&gt; &lt;span class="ow"&gt;is&lt;/span&gt; &lt;span class="n"&gt;by&lt;/span&gt; &lt;span class="n"&gt;far&lt;/span&gt; &lt;span class="n"&gt;always&lt;/span&gt; &lt;span class="n"&gt;better&lt;/span&gt; &lt;span class="n"&gt;than&lt;/span&gt; &lt;span class="n"&gt;learning&lt;/span&gt; &lt;span class="n"&gt;nothing&lt;/span&gt; &lt;span class="n"&gt;at&lt;/span&gt; &lt;span class="nb"&gt;all&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
 
 &lt;h1&gt;The challenge&lt;/h1&gt;
 &lt;p&gt;I attended the same conference as Dave Duke. One of the presenters was &lt;a href="https://twitter.com/lisihocke"&gt;@lisihocke&lt;/a&gt;. She sets herself a personal challenge every year and at the conference she talked about her challenge to become more &lt;em&gt;code confident&lt;/em&gt;.  &lt;/p&gt;
